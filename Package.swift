@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "MailCore2",
     platforms: [
-        .iOS(.v9), .macOS(.v10_10)
+        .iOS(.v12), .macOS(.v10_13)
     ],
     products: [
         .library(
