@@ -345,8 +345,6 @@ let package = Package(
                     .linkedFramework("CFNetwork"),
                     .linkedFramework("Foundation"),
                     .linkedFramework("SystemConfiguration"),
-                    .linkedFramework(“libc++“),
-                    .linkedFramework(“CoreFoundation”)
                 ]),
         .testTarget(name: "unittest",
                     dependencies: ["MailCore"],
