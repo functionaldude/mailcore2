@@ -340,11 +340,13 @@ let package = Package(
                     .linkedLibrary("iconv"),
                     .linkedLibrary("xml2"),
                     .linkedLibrary("resolv"),
-                    .linkedLibrary("sasl2"),
+                    .linkedLibrary("sasl2", .when(platforms: [.macOS])),
                     .linkedFramework("Security"),
                     .linkedFramework("CFNetwork"),
                     .linkedFramework("Foundation"),
-                    .linkedFramework("SystemConfiguration")
+                    .linkedFramework("SystemConfiguration"),
+                    .linkedFramework(“libc++“),
+                    .linkedFramework(“CoreFoundation”)
                 ]),
         .testTarget(name: "unittest",
                     dependencies: ["MailCore"],
