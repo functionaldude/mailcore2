@@ -340,7 +340,7 @@ let package = Package(
                     .linkedLibrary("iconv"),
                     .linkedLibrary("xml2"),
                     .linkedLibrary("resolv"),
-                    .linkedLibrary("sasl2", .when(platforms: [.macOS])),
+                    .linkedLibrary("sasl2"),
                     .linkedFramework("Security"),
                     .linkedFramework("CFNetwork"),
                     .linkedFramework("Foundation"),
