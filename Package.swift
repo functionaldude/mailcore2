@@ -322,6 +322,7 @@ let package = Package(
         .package(url: "https://github.com/jsflax/ctemplate/", branch: "master")
     ],
     targets: [
+        .binaryTarget(name: "sasl2", path: "SASL2.xcframework"),
         .target(name: "MailCore",
                 dependencies: [
                     "libetpan",
