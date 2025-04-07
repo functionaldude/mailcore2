@@ -317,7 +317,7 @@ let package = Package(
             targets: ["MailCore"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/jsflax/libetpan/", branch: "master"),
+        .package(url: "https://github.com/functionaldude/libetpan/", branch: "master"),
         .package(url: "https://github.com/jsflax/tidy-html5/", branch: "master"),
         .package(url: "https://github.com/jsflax/ctemplate/", branch: "master")
     ],
@@ -340,7 +340,7 @@ let package = Package(
                     .linkedLibrary("iconv"),
                     .linkedLibrary("xml2"),
                     .linkedLibrary("resolv"),
-                    .linkedLibrary("sasl2", .when(platforms: [.macOS])),
+                    //.linkedLibrary("sasl2", .when(platforms: [.macOS])),
                     .linkedFramework("Security"),
                     .linkedFramework("CFNetwork"),
                     .linkedFramework("Foundation"),
