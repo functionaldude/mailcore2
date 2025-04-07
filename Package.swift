@@ -325,7 +325,7 @@ let package = Package(
         .binaryTarget(name: "sasl2", path: "SASL2.xcframework"),
         .target(name: "MailCore",
                 dependencies: [
-                    "sasl2",
+                    //"sasl2",
                     "libetpan",
                     .product(name: "tidy", package: "tidy-html5"),
                     "ctemplate"
